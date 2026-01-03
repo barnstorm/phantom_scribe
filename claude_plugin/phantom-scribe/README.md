@@ -13,9 +13,18 @@ From this repo root:
 Then run:
 - `/phantom-scribe:kickoff <your thumbnail>`
 
-## Install (Plugin Manager)
+## Install from Git
 
-If you publish this plugin via a marketplace, users can install it with Claude Code’s plugin tools. (Exact steps depend on your marketplace setup.)
+Install directly from the repository:
+```bash
+claude plugin install github:barnstorm/phantom_scribe --subdir phantom_scribe/claude_plugin/phantom-scribe
+```
+
+Or clone and install locally:
+```bash
+git clone https://github.com/barnstorm/phantom_scribe.git
+claude plugin install ./phantom_scribe/claude_plugin/phantom-scribe
+```
 
 ## Seed a New Story Workspace
 

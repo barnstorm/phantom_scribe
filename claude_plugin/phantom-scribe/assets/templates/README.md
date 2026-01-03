@@ -12,10 +12,10 @@ Install the Codex skill (and optionally project-local Claude agents):
 
 Restart Codex after installing.
 
-### Windows
-- `phantom_scribe\\install.bat`
-- `phantom_scribe\\install.bat --claude`
-- `phantom_scribe\\install.bat --force --claude`
+### Windows (PowerShell)
+- `.\phantom_scribe\install.ps1`
+- `.\phantom_scribe\install.ps1 -Claude`
+- `.\phantom_scribe\install.ps1 -Force -Claude`
 
 Restart Codex after installing.
 
@@ -23,7 +23,7 @@ Restart Codex after installing.
 
 For Claude Code (project-local agents), run the installer with `--claude` and then restart/reload Claude Code:
 - macOS/Linux: `./phantom_scribe/install.sh --claude`
-- Windows: `phantom_scribe\\install.bat --claude`
+- Windows: `.\phantom_scribe\install.ps1 -Claude`
 
 Then start with `story-orchestrator`. See `phantom_scribe/CLAUDE.md`.
 

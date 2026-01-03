@@ -12,10 +12,10 @@ Install the Codex skill (and optionally project-local Claude agents):
 
 Restart Codex after installing.
 
-### Windows
-- `phantom_scribe\\install.bat`
-- `phantom_scribe\\install.bat --claude`
-- `phantom_scribe\\install.bat --force --claude`
+### Windows (PowerShell)
+- `.\phantom_scribe\install.ps1`
+- `.\phantom_scribe\install.ps1 -Claude`
+- `.\phantom_scribe\install.ps1 -Force -Claude`
 
 Restart Codex after installing.
 
@@ -28,7 +28,7 @@ Restart Codex after installing.
 
 For Claude Code (project-local agents), run the installer with `--claude` and then restart/reload Claude Code:
 - macOS/Linux: `./phantom_scribe/install.sh --claude`
-- Windows: `phantom_scribe\\install.bat --claude`
+- Windows: `.\phantom_scribe\install.ps1 -Claude`
 
 This installs:
 - `.claude/agents/` (agents)
@@ -36,12 +36,32 @@ This installs:
 
 Then ask “Help me write a story…” to trigger the Skill, or start explicitly with `story-orchestrator`. See `phantom_scribe/CLAUDE.md`.
 
+## Claude Desktop
+
+For the Claude Desktop app, create a Project and paste the custom instructions:
+- See [`CLAUDE_DESKTOP_SETUP.md`](CLAUDE_DESKTOP_SETUP.md) for full instructions
+- Copy the provided prompt into your Project's custom instructions
+- Upload templates to the Project's document library
+
 ## Claude Code Plugin
 
 This repo also includes a Claude Code plugin (namespaced slash commands like `/phantom-scribe:kickoff`).
 
-Local test:
-- `claude --plugin-dir ./phantom_scribe/claude_plugin/phantom-scribe`
+Install from git:
+```bash
+claude plugin install github:barnstorm/phantom_scribe --subdir phantom_scribe/claude_plugin/phantom-scribe
+```
+
+Or clone and install locally:
+```bash
+git clone https://github.com/barnstorm/phantom_scribe.git
+claude plugin install ./phantom_scribe/claude_plugin/phantom-scribe
+```
+
+Test without installing:
+```bash
+claude --plugin-dir ./phantom_scribe/claude_plugin/phantom-scribe
+```
 
 See `phantom_scribe/claude_plugin/phantom-scribe/README.md`.
 

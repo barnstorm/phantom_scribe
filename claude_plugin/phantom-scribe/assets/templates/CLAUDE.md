@@ -6,7 +6,7 @@ If you use Claude Code, this repo can provide project-local agents and a repeata
 
 From the repo root:
 - macOS/Linux: `./phantom_scribe/install.sh --claude`
-- Windows: `phantom_scribe\\install.bat --claude`
+- Windows: `.\phantom_scribe\install.ps1 -Claude`
 
 This copies agent prompts into `.claude/agents/` in the target repo.
 
