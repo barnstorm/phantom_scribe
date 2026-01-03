@@ -19,31 +19,13 @@ Restart Codex after installing.
 
 Restart Codex after installing.
 
-## Codex CLI Usage
-
-- After install + restart, ask something like: “Help me write a story from this thumbnail…” to trigger the `phantom-scribe` Skill.
-- Create a workspace with `~/.codex/skills/phantom-scribe/scripts/new_project.sh stories/my_story 24 --with-agents` (or run the repo script below).
-
 ## Claude Code
 
 For Claude Code (project-local agents), run the installer with `--claude` and then restart/reload Claude Code:
 - macOS/Linux: `./phantom_scribe/install.sh --claude`
 - Windows: `phantom_scribe\\install.bat --claude`
 
-This installs:
-- `.claude/agents/` (agents)
-- `.claude/skills/phantom-scribe/` (project Skill)
-
-Then ask “Help me write a story…” to trigger the Skill, or start explicitly with `story-orchestrator`. See `phantom_scribe/CLAUDE.md`.
-
-## Claude Code Plugin
-
-This repo also includes a Claude Code plugin (namespaced slash commands like `/phantom-scribe:kickoff`).
-
-Local test:
-- `claude --plugin-dir ./phantom_scribe/claude_plugin/phantom-scribe`
-
-See `phantom_scribe/claude_plugin/phantom-scribe/README.md`.
+Then start with `story-orchestrator`. See `phantom_scribe/CLAUDE.md`.
 
 ## Creating a New Story Workspace
 
