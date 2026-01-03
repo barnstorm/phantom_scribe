@@ -46,6 +46,12 @@ cp "$root_dir/IMPROVEMENTS_LOG_TEMPLATE.md" "$project_dir/logs/IMPROVEMENTS_LOG.
 cp "$root_dir/STRUCTURAL_AUDIT_TEMPLATE.md" "$project_dir/world/STRUCTURAL_AUDIT.md"
 cp "$root_dir/AGENTS_USAGE.md" "$project_dir/AGENTS_USAGE.md"
 cp "$root_dir/CLAUDE.md" "$project_dir/CLAUDE.md"
+cp "$root_dir/END_OF_SESSION_CHECKLIST.md" "$project_dir/END_OF_SESSION_CHECKLIST.md"
+cp "$root_dir/CHAPTER_DONE_CHECKLIST.md" "$project_dir/CHAPTER_DONE_CHECKLIST.md"
+cp "$root_dir/WORLD_BIBLE_SYNC_CHECKLIST.md" "$project_dir/WORLD_BIBLE_SYNC_CHECKLIST.md"
+cp "$root_dir/OPEN_QUESTIONS_TEMPLATE.md" "$project_dir/OPEN_QUESTIONS.md"
+cp "$root_dir/WORKSPACE_LAYOUT.md" "$project_dir/WORKSPACE_LAYOUT.md"
+cp "$root_dir/CLUE_LEDGER_TEMPLATE.md" "$project_dir/world/CLUE_LEDGER.md"
 cp "$root_dir/CHARACTER_REFERENCE_TEMPLATE.md" "$project_dir/characters/CHARACTER_REFERENCE.md"
 cp "$root_dir/CHARACTER_SKETCH_TEMPLATE.md" "$project_dir/characters/CHARACTER_SKETCH_TEMPLATE.md"
 
@@ -68,6 +74,10 @@ done
 if [[ "$with_agents" == "--with-agents" ]]; then
   mkdir -p "$project_dir/.claude"
   cp -r "$root_dir/.claude/agents" "$project_dir/.claude/"
+
+  if [[ -d "$root_dir/.claude/skills" ]]; then
+    cp -r "$root_dir/.claude/skills" "$project_dir/.claude/"
+  fi
 fi
 
 echo "Created project in: $project_dir"

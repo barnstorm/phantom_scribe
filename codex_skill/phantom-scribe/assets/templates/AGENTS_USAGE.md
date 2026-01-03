@@ -6,6 +6,7 @@ Use agent prompts in `assets/claude/agents/` during specific phases.
 - **Kickoff/Planning:** `story-orchestrator`
 - **Character Baselines:** `character-sketcher` (write-safe sketch + labeled headcanon hooks)
 - **Canon Adoption:** `accept-headcanon` (promote selected hooks into `WORLD_BIBLE.md` / character references)
+- **Thriller Pacing:** `reversal-ladder` (scene-level reversals + cliff buttons)
 - **Worldbuilding/Canon:** `worldbible-builder`, `canon-keeper`, `timeline-keeper`
 - **Rules Design / Change Control:** `constraint-designer`, `retcon-manager`
 - **Character Honing:** `character-profiler`

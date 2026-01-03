@@ -13,6 +13,7 @@ Ask for (then proceed with defaults if missing):
 3. Target length (24 or 30 chapters, or target audio hours)
 4. POV/tense preference
 5. Rule hardness (hard rules vs soft ambiguity)
+6. Romance intensity (optional): none / low subplot / medium / high
 
 Then produce:
 - Harmon Story Circle (8 beats)
@@ -41,4 +42,3 @@ Use these agents (in `assets/claude/agents/`) as needed:
 Keep changes “non-leaky”:
 - Beats lock plot before polishing.
 - If a twist changes canon, log it and re-run canon/timeline checks.
-

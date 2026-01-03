@@ -20,4 +20,4 @@ description: Kickstart and maintain a fast-paced fiction project from a thumbnai
 - End every chapter with motion (new question/constraint/decision).
 - Midpoint must reframe the premise (not just “more danger”).
 - Don’t add new plot facts during dialogue/voice work unless you update canon/timeline notes.
-
+- If romance is included, decide intensity early (none/low/medium/high) and treat it as an overlay track with planned beats.

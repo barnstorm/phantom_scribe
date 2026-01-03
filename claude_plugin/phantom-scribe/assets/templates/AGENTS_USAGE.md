@@ -10,6 +10,7 @@ This folder includes `.claude/agents/*` agent prompts designed to be used during
 - **Kickoff/Planning:** Use `story-orchestrator` to turn a thumbnail into a chapter-ready plan fast.
 - **Character Baselines:** Use `character-sketcher` to create a write-safe sketch + labeled headcanon hooks before drafting.
 - **Canon Adoption:** Use `accept-headcanon` to promote selected headcanon hooks into `world/WORLD_BIBLE.md` and `characters/CHARACTER_REFERENCE.md` explicitly.
+- **Thriller Pacing:** Use `reversal-ladder` to design scene-level reversals and cliff buttons.
 - **Character Honing:** Use `character-profiler` to lock characterization and catch drift.
 - **Line Editing:** Use `dialogue-editor` for any dialogue you touch; use `character-roleplay` to test voice in hard scenes.
 - **Copy Editing:** Usually no agents; keep changes mechanical.

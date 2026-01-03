@@ -11,6 +11,10 @@ This folder includes `.claude/agents/*` agent prompts designed to be used during
 - **Character Baselines:** Use `character-sketcher` to create a write-safe sketch + labeled headcanon hooks before drafting.
 - **Canon Adoption:** Use `accept-headcanon` to promote selected headcanon hooks into `WORLD_BIBLE.md` / character references explicitly.
 - **Character Honing:** Use `character-profiler` to lock characterization and catch drift.
+- **Thriller Pacing:** Use `reversal-ladder` to build scene-level reversals and cliff buttons when chapters feel flat.
+- **Horror Escalation:** Use `horror-escalation` + `DREAD_LADDER_TEMPLATE.md` to make dread compound by reducing options while revealing rules/costs.
+- **Post-Chapter QA:** Use `chapter-checker` after drafting/revising a chapter to confirm beats, momentum, and what trackers to update.
+- **Canon Sync:** Use `worldbible-sync` after several chapters to update `WORLD_BIBLE.md` and park unknowns in `OPEN_QUESTIONS.md`.
 - **Line Editing:** Use `dialogue-editor` for any dialogue you touch; use `character-roleplay` to test voice in hard scenes.
 - **Copy Editing:** Usually no agents; keep changes mechanical.
 
@@ -40,6 +44,55 @@ This folder includes `.claude/agents/*` agent prompts designed to be used during
 **Save outputs**
 - Updates `world/WORLD_BIBLE.md` and/or `characters/CHARACTER_REFERENCE.md` (creates if missing).
 - Follow with `canon-keeper`/`timeline-keeper` checks if the hook touches rules or chronology.
+
+## `reversal-ladder`
+
+**Use when**
+- A chapter outline feels like “stuff happens” rather than “therefore / but”.
+- You want Dan Brown–style scene reversals and page-turn hooks.
+- You’re revising a slow middle and need momentum without changing the macro beats.
+
+**Provide**
+- Chapter purpose, POV(s), draft/outline, and any canon/timeline constraints.
+
+**Save outputs**
+- Paste the scene ladder into your chapter notes or `world/` folder alongside pacing sheets.
+
+## `horror-escalation`
+
+**Use when**
+- Outlining or revising horror (including cosmic horror) and you want escalation that feels inevitable, not random.
+- You need a threat rule card, dread stages, and set-piece seeds.
+
+**Provide**
+- Thumbnail + tone, target length, threat concept, and any content limits.
+
+**Save outputs**
+- Store the dread ladder in `world/` and update `WORLD_BIBLE.md` with confirmed rules/costs.
+
+## `chapter-checker`
+
+**Use when**
+- Immediately after drafting or heavily revising a chapter.
+- You want to catch beat drift, timeline/knowledge leaks, and weak hooks.
+
+**Provide**
+- The chapter text (or path), intended beats, and prior chapter state (summary ok).
+
+**Save outputs**
+- Update trackers: `BEAT_TRACKING.md`, `TODO_INDEX.md`, and your improvements log.
+
+## `worldbible-sync`
+
+**Use when**
+- End of Act 1, at midpoint, or before line edits.
+- You added new rules/terms/factions/locations and want canon docs to catch up.
+
+**Provide**
+- List of changed chapters and current canon docs (`WORLD_BIBLE.md`, `CHARACTER_REFERENCE.md`, `OPEN_QUESTIONS.md`).
+
+**Save outputs**
+- Updated canon docs + an updated open-questions/risk list.
 
 ## `story-orchestrator`
 

@@ -21,6 +21,9 @@ This copies agent prompts into `.claude/agents/` and installs the `phantom-scrib
    - Chapter grid (question → answer → constraint → cost)
    - Beat-to-chapter mapping
 
+Notes:
+- If you used `--with-agents`, the workspace includes `.claude/agents/` and `.claude/skills/phantom-scribe/` so the Skill can trigger automatically.
+
 ## Which Agent When
 
 See `phantom_scribe/AGENTS_USAGE.md` for details. Common loop:

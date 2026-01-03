@@ -56,16 +56,22 @@ From the installed Codex skill (after install):
 This creates:
 - `START_HERE.md`, beat/pacing sheets, trackers, logs
 - `chapters/chapter_01.md` … stubs
-- Optional `.claude/agents/` copied in (for Claude Code–style discovery)
+- Optional `.claude/agents/` and `.claude/skills/phantom-scribe/` copied in (for Claude Code–style discovery + Skill triggering)
+ - `WORKSPACE_LAYOUT.md` + optional `world/CLUE_LEDGER.md`
 
 ## What’s Included
 
 ### Templates
 - `BEAT_SHEET_TEMPLATE.md`, `HARMON_STORY_CIRCLE_TEMPLATE.md`
 - `CROUCH_PACING_SHEET_TEMPLATE.md`, `HARMON_CROUCH_CHAPTER_GRIDS.md`
+- `REVERSAL_LADDER_TEMPLATE.md` (scene-level thriller reversals + cliff buttons)
+- `DREAD_LADDER_TEMPLATE.md` (horror escalation: rules/costs tighten, options collapse)
 - `BEAT_TRACKING_TEMPLATE.md`, `TODO_INDEX_TEMPLATE.md`
 - `CONTINUITY_REPORT_TEMPLATE.md`, `STRUCTURAL_AUDIT_TEMPLATE.md`
 - `PASS_LOG_TEMPLATES.md`, `IMPROVEMENTS_LOG_TEMPLATE.md`
+- `CHAPTER_DONE_CHECKLIST.md`, `END_OF_SESSION_CHECKLIST.md` (rinse/repeat guardrails)
+- `WORLD_BIBLE_SYNC_CHECKLIST.md`, `OPEN_QUESTIONS_TEMPLATE.md` (canon sync + parked decisions)
+- `WORKSPACE_LAYOUT.md`, `CLUE_LEDGER_TEMPLATE.md` (workspace map + clue economy)
 
 ### Agents (Claude-style prompts)
 Located in `phantom_scribe/.claude/agents/` and mirrored into the Codex skill assets:

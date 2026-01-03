@@ -14,6 +14,7 @@ Ask for:
 3) **Target length**: chapters count preference (24 vs 30) OR target audio hours.
 4) **POV/tense** preference (or “decide for me”).
 5) **Rule hardness**: hard rules vs soft mythic ambiguity.
+6) **Romance intensity (optional):** none / low subplot / medium co‑primary / high primary.
 
 If the user can’t answer, propose defaults and proceed.
 
@@ -37,6 +38,11 @@ Then output a chapter table with, for each chapter:
 
 Keep entries short and actionable; avoid prose.
 
+If romance intensity is non-`none`, treat romance as an overlay track:
+- **Low subplot:** 6–8 relationship beats sprinkled; plot still drives most chapters.
+- **Medium:** key decisions carry both plot and relationship consequences; include a midpoint relationship shift and a late-act rupture/repair.
+- **High:** the commitment choice is the primary climax gate; external plot becomes the crucible.
+
 ## Step 4: Convert to Beats (coverage plan)
 Produce a beat-to-chapter mapping (1–3 beats per chapter). Beats should be specific actions/revelations, not themes.
 
@@ -50,4 +56,3 @@ Prefer the local script if present:
 - Every chapter ends in motion (new question/constraint/decision).
 - Midpoint must reframe the premise (not just “bigger danger”).
 - Don’t introduce new canon “exceptions” without declaring their cost and constraints.
-
