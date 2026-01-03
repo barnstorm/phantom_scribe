@@ -30,10 +30,11 @@ fi
 
 root_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
-mkdir -p "$project_dir"/{chapters,world,logs,notes}
+mkdir -p "$project_dir"/{chapters,world,characters,logs,notes}
 
 cp "$root_dir/START_HERE_TEMPLATE.md" "$project_dir/START_HERE.md"
 cp "$root_dir/BEAT_SHEET_TEMPLATE.md" "$project_dir/world/BEAT_SHEET.md"
+cp "$root_dir/WORLD_BIBLE_TEMPLATE.md" "$project_dir/world/WORLD_BIBLE.md"
 cp "$root_dir/BEAT_TRACKING_TEMPLATE.md" "$project_dir/BEAT_TRACKING.md"
 cp "$root_dir/TODO_INDEX_TEMPLATE.md" "$project_dir/TODO_INDEX.md"
 cp "$root_dir/CROUCH_PACING_SHEET_TEMPLATE.md" "$project_dir/world/PACING_SHEET.md"
@@ -45,6 +46,8 @@ cp "$root_dir/IMPROVEMENTS_LOG_TEMPLATE.md" "$project_dir/logs/IMPROVEMENTS_LOG.
 cp "$root_dir/STRUCTURAL_AUDIT_TEMPLATE.md" "$project_dir/world/STRUCTURAL_AUDIT.md"
 cp "$root_dir/AGENTS_USAGE.md" "$project_dir/AGENTS_USAGE.md"
 cp "$root_dir/CLAUDE.md" "$project_dir/CLAUDE.md"
+cp "$root_dir/CHARACTER_REFERENCE_TEMPLATE.md" "$project_dir/characters/CHARACTER_REFERENCE.md"
+cp "$root_dir/CHARACTER_SKETCH_TEMPLATE.md" "$project_dir/characters/CHARACTER_SKETCH_TEMPLATE.md"
 
 for i in $(seq 1 "$chapters"); do
   printf -v n "%02d" "$i"

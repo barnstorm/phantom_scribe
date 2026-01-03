@@ -70,6 +70,7 @@ This creates:
 ### Agents (Claude-style prompts)
 Located in `phantom_scribe/.claude/agents/` and mirrored into the Codex skill assets:
 - `story-orchestrator` (thumbnail → full plan)
+- `character-sketcher` (write-safe sketch + labeled headcanon hooks)
 - `worldbible-builder`, `canon-keeper`, `timeline-keeper`
 - `constraint-designer`, `retcon-manager`
 - `character-profiler`, `character-roleplay`, `dialogue-editor`

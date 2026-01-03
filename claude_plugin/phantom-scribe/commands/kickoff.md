@@ -14,3 +14,4 @@ Requirements:
   - Beat-to-chapter mapping (1–3 beats per chapter)
 - End by recommending `phantom_scribe/scripts/new_project.sh` (or this plugin’s `/phantom-scribe:new-project`) to create a workspace.
 
+Optional: if the user wants to lock character voice early, recommend running `character-sketcher` for the protagonist before drafting Chapter 1.

@@ -8,9 +8,38 @@ This folder includes `.claude/agents/*` agent prompts designed to be used during
 - **Worldbuilding/Canon:** Use `worldbible-builder`, `canon-keeper`, and `timeline-keeper` to keep high-concept rules stable.
 - **Rules Design / Change Control:** Use `constraint-designer` to define limits and `retcon-manager` to propagate intentional canon changes safely.
 - **Kickoff/Planning:** Use `story-orchestrator` to turn a thumbnail into a chapter-ready plan fast.
+- **Character Baselines:** Use `character-sketcher` to create a write-safe sketch + labeled headcanon hooks before drafting.
+- **Canon Adoption:** Use `accept-headcanon` to promote selected headcanon hooks into `WORLD_BIBLE.md` / character references explicitly.
 - **Character Honing:** Use `character-profiler` to lock characterization and catch drift.
 - **Line Editing:** Use `dialogue-editor` for any dialogue you touch; use `character-roleplay` to test voice in hard scenes.
 - **Copy Editing:** Usually no agents; keep changes mechanical.
+
+## `character-sketcher`
+
+**Use when**
+- Starting a new story and you want a stable voice baseline before chapter 1.
+- Adding a new POV character mid-project.
+- You want “headcanon” options clearly labeled as non-canon until accepted.
+
+**Provide**
+- Thumbnail + genre/tone, character role, setting basics, any must/avoid constraints.
+
+**Save outputs**
+- Store sketches in `characters/` (e.g., `characters/<name>_sketch.md`).
+- Promote adopted headcanon into your world bible / character references explicitly.
+
+## `accept-headcanon`
+
+**Use when**
+- You’ve selected specific headcanon hooks and want them to become explicit canon.
+- You want adoption recorded with “effective chapter/beat” so reveals stay controlled.
+
+**Provide**
+- The exact hook bullets to adopt, plus whether they are canon now or still candidates.
+
+**Save outputs**
+- Updates `world/WORLD_BIBLE.md` and/or `characters/CHARACTER_REFERENCE.md` (creates if missing).
+- Follow with `canon-keeper`/`timeline-keeper` checks if the hook touches rules or chronology.
 
 ## `story-orchestrator`
 

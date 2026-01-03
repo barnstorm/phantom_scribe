@@ -27,10 +27,11 @@ fi
 skill_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 assets="$skill_dir/assets"
 
-mkdir -p "$project_dir"/{chapters,world,logs,notes}
+mkdir -p "$project_dir"/{chapters,world,characters,logs,notes}
 
 cp "$assets/templates/START_HERE_TEMPLATE.md" "$project_dir/START_HERE.md"
 cp "$assets/templates/BEAT_SHEET_TEMPLATE.md" "$project_dir/world/BEAT_SHEET.md"
+cp "$assets/templates/WORLD_BIBLE_TEMPLATE.md" "$project_dir/world/WORLD_BIBLE.md"
 cp "$assets/templates/BEAT_TRACKING_TEMPLATE.md" "$project_dir/BEAT_TRACKING.md"
 cp "$assets/templates/TODO_INDEX_TEMPLATE.md" "$project_dir/TODO_INDEX.md"
 cp "$assets/templates/CROUCH_PACING_SHEET_TEMPLATE.md" "$project_dir/world/PACING_SHEET.md"
@@ -42,6 +43,8 @@ cp "$assets/templates/IMPROVEMENTS_LOG_TEMPLATE.md" "$project_dir/logs/IMPROVEME
 cp "$assets/templates/STRUCTURAL_AUDIT_TEMPLATE.md" "$project_dir/world/STRUCTURAL_AUDIT.md"
 cp "$assets/templates/AGENTS_USAGE.md" "$project_dir/AGENTS_USAGE.md"
 cp "$assets/templates/CLAUDE.md" "$project_dir/CLAUDE.md"
+cp "$assets/templates/CHARACTER_REFERENCE_TEMPLATE.md" "$project_dir/characters/CHARACTER_REFERENCE.md"
+cp "$assets/templates/CHARACTER_SKETCH_TEMPLATE.md" "$project_dir/characters/CHARACTER_SKETCH_TEMPLATE.md"
 
 for i in $(seq 1 "$chapters"); do
   printf -v n "%02d" "$i"
