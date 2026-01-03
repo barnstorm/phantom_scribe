@@ -49,6 +49,7 @@ cp "$assets/templates/WORLD_BIBLE_SYNC_CHECKLIST.md" "$project_dir/WORLD_BIBLE_S
 cp "$assets/templates/OPEN_QUESTIONS_TEMPLATE.md" "$project_dir/OPEN_QUESTIONS.md"
 cp "$assets/templates/WORKSPACE_LAYOUT.md" "$project_dir/WORKSPACE_LAYOUT.md"
 cp "$assets/templates/CLUE_LEDGER_TEMPLATE.md" "$project_dir/world/CLUE_LEDGER.md"
+cp "$assets/templates/REVERSE_ENGINEERING_CHECKLIST.md" "$project_dir/REVERSE_ENGINEERING_CHECKLIST.md"
 cp "$assets/templates/CHARACTER_REFERENCE_TEMPLATE.md" "$project_dir/characters/CHARACTER_REFERENCE.md"
 cp "$assets/templates/CHARACTER_SKETCH_TEMPLATE.md" "$project_dir/characters/CHARACTER_SKETCH_TEMPLATE.md"
 

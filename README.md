@@ -72,6 +72,7 @@ This creates:
 - `CHAPTER_DONE_CHECKLIST.md`, `END_OF_SESSION_CHECKLIST.md` (rinse/repeat guardrails)
 - `WORLD_BIBLE_SYNC_CHECKLIST.md`, `OPEN_QUESTIONS_TEMPLATE.md` (canon sync + parked decisions)
 - `WORKSPACE_LAYOUT.md`, `CLUE_LEDGER_TEMPLATE.md` (workspace map + clue economy)
+- `REVERSE_ENGINEERING_CHECKLIST.md` (turn an existing draft into a synopsis + canon updates)
 
 ### Agents (Claude-style prompts)
 Located in `phantom_scribe/.claude/agents/` and mirrored into the Codex skill assets:

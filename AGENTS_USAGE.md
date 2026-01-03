@@ -15,6 +15,7 @@ This folder includes `.claude/agents/*` agent prompts designed to be used during
 - **Horror Escalation:** Use `horror-escalation` + `DREAD_LADDER_TEMPLATE.md` to make dread compound by reducing options while revealing rules/costs.
 - **Post-Chapter QA:** Use `chapter-checker` after drafting/revising a chapter to confirm beats, momentum, and what trackers to update.
 - **Canon Sync:** Use `worldbible-sync` after several chapters to update `WORLD_BIBLE.md` and park unknowns in `OPEN_QUESTIONS.md`.
+- **Reverse Engineering:** Use `reverser` when you already have a draft and need a 1–2 page thumbnail + canon extraction plan to start improving it.
 - **Line Editing:** Use `dialogue-editor` for any dialogue you touch; use `character-roleplay` to test voice in hard scenes.
 - **Copy Editing:** Usually no agents; keep changes mechanical.
 
@@ -93,6 +94,17 @@ This folder includes `.claude/agents/*` agent prompts designed to be used during
 
 **Save outputs**
 - Updated canon docs + an updated open-questions/risk list.
+
+## `reverser`
+
+**Use when**
+- You have an existing draft and want to rebuild planning artifacts (thumbnail, vibe read, canon docs) before revising.
+
+**Provide**
+- The story text (or chapters), target vibe, and any existing canon docs.
+
+**Save outputs**
+- A 1–2 page synopsis + “changes to apply” list for `WORLD_BIBLE.md`, `CHARACTER_REFERENCE.md`, `OPEN_QUESTIONS.md`, and `CLUE_LEDGER.md`.
 
 ## `story-orchestrator`
 

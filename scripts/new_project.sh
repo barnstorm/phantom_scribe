@@ -52,6 +52,7 @@ cp "$root_dir/WORLD_BIBLE_SYNC_CHECKLIST.md" "$project_dir/WORLD_BIBLE_SYNC_CHEC
 cp "$root_dir/OPEN_QUESTIONS_TEMPLATE.md" "$project_dir/OPEN_QUESTIONS.md"
 cp "$root_dir/WORKSPACE_LAYOUT.md" "$project_dir/WORKSPACE_LAYOUT.md"
 cp "$root_dir/CLUE_LEDGER_TEMPLATE.md" "$project_dir/world/CLUE_LEDGER.md"
+cp "$root_dir/REVERSE_ENGINEERING_CHECKLIST.md" "$project_dir/REVERSE_ENGINEERING_CHECKLIST.md"
 cp "$root_dir/CHARACTER_REFERENCE_TEMPLATE.md" "$project_dir/characters/CHARACTER_REFERENCE.md"
 cp "$root_dir/CHARACTER_SKETCH_TEMPLATE.md" "$project_dir/characters/CHARACTER_SKETCH_TEMPLATE.md"
 
